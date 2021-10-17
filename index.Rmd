@@ -1,7 +1,7 @@
 ---
 title: "Spatial Portfolio"
 author: "Sam Lewis"
-date: "10/16/2021"
+date: "10/17/2021"
 output: 
   rmdformats::downcute
 ---
@@ -12,9 +12,9 @@ knitr::opts_chunk$set(echo = TRUE)
 
 # Introduction
 
-This portfolio demonstrates the skill learner in VIS 2128 Spatial Analysis with Carole Voulgaris. The webpage was created directly in RStudio.
+This portfolio demonstrates the skills learned in VIS 2128 Spatial Analysis with Carole Voulgaris. The webpage was created directly in RStudio.
 
-My portfolio demonstrates each of the following skills:
+The portfolio demonstrates each of the following skills:
 
 * Displaying multiple vector layers on the same map
 * Calculating and displaying relationships among point and polygon layers based on distance
@@ -25,37 +25,78 @@ My portfolio demonstrates each of the following skills:
 * Georeferencing a raster image
 * Displaying data on an interactive map
 
-# Maps of Boston
-Here are two maps of Boston.
 
-## Interactive Map
-This interactive map demonstrates the following skills: 
+# Interactive Maps of Boston
+The two interactive maps of Boston, MA analyze the percent of the Black population that identify as female and the percent of Black residents that do not have health insurance coverage.
+
+
+The two interactive maps demonstrate the following skills: 
 
 * Displaying data on an interactive map
 
-[![](thumbnails/Boston_interactive.png)](https://samanthanlewis.github.io/spatial_portfolio//fullsize/black_fem_pop.html){target="_blank"}
+## Percent Black + Female
 
-This interactive map shos the percent of...
+This interactive map shows the percent of the total Black or African American Population that identifies as female. Click on each census block to see the pop up and labels with more information on the total Black population and percent of the total Black population that is also female. The data is sourced from the 2010 US Census.
 
-[![](thumbnails/Boston_interactive.png)](https://samanthanlewis.github.io/spatial_portfolio//fullsize/black_no_insurance.html){target="_blank"}
+[![](thumbnails/Boston_interactive_1a.png)](https://samanthanlewis.github.io/spatial_portfolio//fullsize/black_fem_pop.html){target="_blank"}
 
-## Clockboard Map
+## Percent: Black + No Insurance
+
+The second interactive map shows the share of Black or African American residents in each census tract in Boston that do not have health insurance. Click on each census block to see the pop up and labels with more information on the total Black population and percent of the total Black population with no health insurance coverage. The data is from the American Community Survey (ACS) Data from the year 2019.
+
+[![](thumbnails/Boston_interactive_2a.png)](https://samanthanlewis.github.io/spatial_portfolio//fullsize/black_no_insurance.html){target="_blank"}
+
+# Maps of Boston
+The next set of maps are static maps that analyze the history in Boston, tree coverage, public resources (Community Centers and Public Schools), and overall accessibility.
+
+
+## Historic Map
+The purpose of this map is to show the change in open space from 1911 through present day. The 1911 Map contains a wide variety of open space, including the 55-acre Wood Island Park. The present day East Boston Boundary includes additional infill, an expanded airport, and demolished parks. This map uses the Open Space layer and Boston Boundary layer to emphasize how the landscape has changed.
+
+It demonstrates the following skills:
+
+* Georeferencing a raster image
+
+[![](thumbnails/EB_Geo.jpg)](https://samanthanlewis.github.io/spatial_portfolio//fullsize/EB_geo.pdf){target="_blank"}
+
+## Trees: within Open Space
+This map shows the average number and proportion of Trees (points) within each Open Space (polygons) in Boston. The map shows that 29% of all trees in Boston are located within Open Space.
+
 This map demonstrates the following skills:
 
 * Aggregating point data to a layer of polygons
 
-[![](thumbnails/clockboard.jpg)](https://samanthanlewis.github.io/spatial_portfolio/s/fullsize/clockboard.pdf){target="_blank"}
+[![](thumbnails/Boston_trees within openspace.jpg)](https://samanthanlewis.github.io/spatial_portfolio/s/fullsize/Boston_trees within openspace.pdf){target="_blank"}
 
-# Maps of San Luis Obispo
-Here are two maps of San Luis Obispo, California. I might include some text here as well.
+## Trees: Close to Schools
+This map shows the number of trees (points) within 500 meters of a public school district (polygons).Around 52% of all trees in Boston are within 500 meters of a Public School.
 
-## Isochrones
-This map shows isochrones based on transit travel times to the nearest school. It demonstrates the following skills:
+This map demonstrates the following skills:
+
+* Calculating and displaying relationships among point and polygon layers based on distance
+
+[![](thumbnails/Poly.png)](https://samanthanlewis.github.io/spatial_portfolio/s/fullsize/Poly.png){target="_blank"}
+
+
+## Community Center: Walking
+This map shows the continuous variation in walking time to a Community Center for any point in the City of Boston. The map visually demonstrates that in most areas of Boston it takes less than 80 minutes to walk to a Community Center, except in East Boston and other islands.
+
+This map demonstrates the following skills:
+
+* Converting between raster layers and vector layers
+
+[![](thumbnails/Raster.png)](https://samanthanlewis.github.io/spatial_portfolio//thumbnails/Raster.png){target="_blank"}
+
+
+## Community Center: Transit
+This map shows isochrones based on transit travel times to the nearest Community Centers. The map shows transit travel in increments of 10 minutes.
+
+It demonstrates the following skills:
 
 * Displaying multiple vector layers on the same map
 * Calculating and displaying accessibility, based on travel time
 
-[![](thumbnails/SLO_isochrone.png)](https://samanthanlewis.github.io/spatial_portfolio//fullsize/SLO_schools.pdf){target="_blank"}
+[![](thumbnails/Iso.png)](https://samanthanlewis.github.io/spatial_portfolio//thumbnails/Iso.png){target="_blank"}
 
 ## Accessibility
 This map shows accessibility based on a distance-decay function of the walking time to the nearest transit stop. It demonstrates the following skills:
@@ -64,4 +105,4 @@ This map shows accessibility based on a distance-decay function of the walking t
 * Calculating and displaying accessibility, based on travel time
 * Displaying raster data on a map
 
-[![](thumbnails/SLO_raster.png)](https://samanthanlewis.github.io/spatial_portfolio//fullsize/SLO_transit.pdf){target="_blank"}
+[![](thumbnails/Iso_Raster before.png)](https://samanthanlewis.github.io/spatial_portfolio//thumbnails/Iso_Raster before.png){target="_blank"}
