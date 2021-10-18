@@ -99,10 +99,12 @@ It demonstrates the following skills:
 [![](thumbnails/Iso.png)](https://samanthanlewis.github.io/spatial_portfolio//thumbnails/Iso.png){target="_blank"}
 
 ## Accessibility
-This map shows accessibility based on a distance-decay function of the walking time to the nearest transit stop. It demonstrates the following skills:
+This map shows accessibility based on a distance-decay function of the pedestrian access to the nearest transit stop.
+
+It demonstrates the following skills:
 
 * Displaying multiple vector layers on the same map
 * Calculating and displaying accessibility, based on travel time
 * Displaying raster data on a map
 
-[![](thumbnails/Iso_Raster before.png)](https://samanthanlewis.github.io/spatial_portfolio//thumbnails/Iso_Raster before.png){target="_blank"}
+[![](thumbnails/Iso_Raster_after.png)](https://samanthanlewis.github.io/spatial_portfolio//thumbnails/Iso_Raster_after.png){target="_blank"}
